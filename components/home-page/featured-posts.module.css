@@ -1,0 +1,12 @@
+.posts {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  padding: 0 10%;
+}
+
+@media (max-width: 600px) {
+  .posts {
+    padding: 0 5%;
+  }
+}
