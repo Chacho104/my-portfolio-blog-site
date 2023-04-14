@@ -30,13 +30,13 @@
   color: var(--color-grey-200);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .header {
     padding: 0 5%;
   }
 
   .header ul {
-    gap: 1rem;
+    gap: 1.5rem;
   }
 
   .header a {
