@@ -10,8 +10,20 @@
   padding: var(--size-8);
 }
 
+.content h2 {
+  padding: var(--size-5) 0;
+}
+
 .content p {
   color: var(--color-grey-800);
+}
+
+.content ul {
+  padding: var(--size-4) var(--size-8) 0;
+}
+
+.content li::marker {
+  color: var(--color-primary-400);
 }
 
 .content .image {
@@ -26,8 +38,14 @@
   height: auto;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .content {
     padding: var(--size-4);
+  }
+}
+
+@media (max-width: 540px) {
+  .content {
+    margin: var(--size-4) auto;
   }
 }
