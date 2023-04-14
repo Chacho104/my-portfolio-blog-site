@@ -6,7 +6,7 @@ function ContactsPage() {
   return (
     <Fragment>
       <Head>
-        <title>C&C Solutions | Contact Me</title>
+        <title>.Ch | Contact Me</title>
         <meta
           name="description"
           content="Say hello! This could be the beginning of wonderful web development experience!"
