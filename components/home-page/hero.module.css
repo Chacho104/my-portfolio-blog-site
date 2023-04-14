@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .image {
@@ -43,7 +44,11 @@
   margin: auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
+  .hero {
+    margin-bottom: var(--size-8);
+  }
+
   .hero h1 {
     font-size: var(--size-8);
   }
