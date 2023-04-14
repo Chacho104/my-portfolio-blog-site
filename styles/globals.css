@@ -49,6 +49,7 @@ body {
   background-color: var(--color-grey-100);
   color: #000;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -59,14 +60,50 @@ h3 {
 
 section h2 {
   font-size: var(--size-12);
-  color: var(--color-grey-1000);
+  color: var(--color-primary-400);
   text-align: center;
-  padding: var(--size-8) 0;
+  padding-bottom: var(--size-8);
 }
 
-@media (max-width: 600px) {
+/* General styling for the layout of main sections*/
+
+section {
+  height: auto;
+  margin-bottom: var(--size-12);
+}
+
+section .topsvg {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+section .topsvg svg,
+section .botsvg svg {
+  color: var(--color-primary-400);
+  font-size: var(--size-8);
+  margin: var(--size-8) 0;
+}
+
+section .botsvg {
+  float: right;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
   section h2 {
     font-size: var(--size-8);
+  }
+
+  section .special-h2 {
+    padding-top: var(--size-8);
+  }
+
+  section .topsvg,
+  section .botsvg {
+    display: none;
   }
 }
 
