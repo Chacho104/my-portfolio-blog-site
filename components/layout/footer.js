@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className={classes.footer}>
       <div>
-        <span>&copy; c&CS 2023</span>
+        <span>&copy; .Ch 2023</span>
       </div>
       <nav>
         <ul>
