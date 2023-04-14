@@ -1,10 +1,126 @@
-.about {
-  height: 100vh;
+.description {
+  height: auto;
   padding: 0 10%;
 }
 
-.about p {
-  text-align: center;
+.item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.line-break {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--size-20);
+  color: var(--color-primary-400);
+}
+
+.text {
+  width: 70%;
+}
+
+.text h3 {
+  font-size: var(--size-8);
+  color: var(--color-primary-400);
+  padding-bottom: var(--size-3);
+}
+
+.text p {
   font-size: var(--size-5);
   line-height: 1.5;
+  padding-top: var(--size-2);
+}
+
+.text p a {
+  color: var(--color-primary-500);
+}
+
+.text p a:hover {
+  color: var(--color-primary-700);
+  text-decoration: underline;
+  text-underline-offset: var(--size-1);
+}
+
+.highlight {
+  color: var(--color-primary-500);
+}
+
+.description .item .text-svg {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.description .item .text-svg svg {
+  font-size: var(--size-40);
+  color: var(--color-grey-700);
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--size-6);
+}
+
+.hello {
+  font: inherit;
+  font-size: var(--size-5);
+  cursor: pointer;
+  background-color: var(--color-primary-400);
+  border: 1px solid var(--color-primary-400);
+  padding: var(--size-3) var(--size-8);
+  border-radius: 4px;
+  color: var(--color-grey-50);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.hello:hover {
+  color: var(--color-primary-400);
+  background-color: transparent;
+  border-color: var(--color-primary-400);
+}
+
+.resume {
+  font: inherit;
+  font-size: var(--size-5);
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid var(--color-primary-400);
+  padding: var(--size-3) var(--size-8);
+  border-radius: 4px;
+  color: var(--color-primary-400);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.resume:hover {
+  background-color: var(--color-primary-400);
+  border-color: var(--color-primary-400);
+  color: var(--color-grey-50);
+}
+
+@media screen and (max-width: 768px) {
+  .about {
+    margin: var(--size-8) 0;
+  }
+  .description {
+    padding: 0 5%;
+  }
+
+  .text {
+    width: 100%;
+  }
+
+  .text h3 {
+    text-align: center;
+  }
+
+  .description .item .text-svg {
+    display: none;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+  }
 }
