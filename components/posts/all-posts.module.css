@@ -1,22 +1,10 @@
-.posts {
-  width: 100%;
+.posts-list {
+  height: auto;
   padding: 0 10%;
-  margin: var(--size-8) auto var(--size-16);
 }
 
-.posts h1 {
-  font-size: var(--size-12);
-  color: var(--color-grey-800);
-  text-align: center;
-  padding-bottom: var(--size-8);
-}
-
-@media (max-width: 600px) {
-  .posts {
+@media (max-width: 768px) {
+  .posts-list {
     padding: 0 5%;
-  }
-
-  .posts h1 {
-    font-size: var(--size-8);
   }
 }
