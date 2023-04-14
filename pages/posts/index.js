@@ -7,7 +7,7 @@ function AllPostsPage(props) {
   return (
     <Fragment>
       <Head>
-        <title>C&C Solutions | All Blogs</title>
+        <title>.Ch | All Blogs</title>
         <meta
           name="description"
           content="A list of all programming blogs and tutorials!"
