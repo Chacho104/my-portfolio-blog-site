@@ -1,54 +1,80 @@
-.contact {
-  height: calc(100vh - 6rem);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.form-section {
+  height: auto;
+  width: 100%;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 10%;
 }
 
-.form-section {
-  margin: var(--size-8) auto;
-  border-radius: 6px;
-  background-color: var(--color-grey-100);
-  width: 90%;
-  max-width: 50rem;
-  padding: var(--size-4);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  font-size: var(--size-6);
+.hello {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: var(--size-8) 0;
+}
+
+.hello svg {
+  margin-left: var(--size-4);
+  font-size: var(--size-16);
+  color: var(--color-primary-400);
 }
 
 .form-section h1 {
+  color: var(--color-primary-400);
   font-size: var(--size-12);
-  margin: var(--size-4) 0;
   text-align: center;
+}
+
+.form-section p {
+  text-align: center;
+  font-size: var(--size-6);
+  padding-bottom: var(--size-8);
 }
 
 .form label {
   display: block;
-  font-family: "Oswald", sans-serif;
-  font-weight: bold;
   margin: var(--size-2) 0 var(--size-1) 0;
 }
 
 .form input,
 .form textarea {
   font: inherit;
+  font-size: var(--size-5);
+  color: var(--color-primary-400);
   padding: var(--size-1);
-  border-radius: 4px;
+  border: none;
+  outline: none;
   width: 100%;
-  border: 1px solid var(--color-grey-400);
-  background-color: var(--color-grey-50);
+  border-bottom: 1px solid var(--color-primary-100);
+  background-color: transparent;
   resize: none;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  color: var(--color-primary-100);
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-bottom: 1px solid var(--color-primary-400);
+}
+
+.form input:focus::placeholder,
+.form textarea:focus::placeholder {
+  color: transparent;
 }
 
 .controls {
   display: flex;
-  column-gap: 1rem;
+  column-gap: 2rem;
   flex-wrap: wrap;
 }
 
 .control {
   flex: 1;
   min-width: 10rem;
+  margin-bottom: var(--size-8);
 }
 
 .actions {
@@ -58,12 +84,13 @@
 
 .form button {
   font: inherit;
+  font-size: var(--size-5);
   cursor: pointer;
-  background-color: var(--color-primary-700);
-  border: 1px solid var(--color-primary-700);
-  padding: var(--size-2) var(--size-4);
+  background-color: var(--color-primary-400);
+  border: 1px solid var(--color-primary-400);
+  padding: var(--size-3) var(--size-8);
   border-radius: 4px;
-  color: var(--color-primary-50);
+  color: var(--color-grey-50);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 
@@ -72,7 +99,7 @@
   border-color: var(--color-primary-500);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .contact h1 {
     font-size: var(--size-8);
     text-align: left;
