@@ -1,6 +1,6 @@
 import About from "@/components/home-page/about";
 import FeaturedPosts from "@/components/home-page/featured-posts";
-import FeaturedProjects from "@/components/home-page/featured-projects";
+import Projects from "@/components/home-page/featured-projects";
 import Hero from "@/components/home-page/hero";
 import { getFeaturedPosts } from "@/lib/posts-util";
 import Head from "next/head";
@@ -10,7 +10,7 @@ function HomePage(props) {
   return (
     <Fragment>
       <Head>
-        <title>C&C Solutions Portfolio & Blog</title>
+        <title>Churchil's Portfolio & Blog</title>
         <meta
           name="description"
           content="Welcome to Churchil's portfolio and blog website. View my amazing projects and read my informative blogs, all in one place."
@@ -18,7 +18,7 @@ function HomePage(props) {
       </Head>
       <Hero />
       <About />
-      <FeaturedProjects />
+      <Projects />
       <FeaturedPosts posts={props.posts} />
     </Fragment>
   );
