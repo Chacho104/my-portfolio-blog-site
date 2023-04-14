@@ -1,4 +1,10 @@
-.projects {
-  height: 100vh;
+.projects-list {
+  height: auto;
   padding: 0 10%;
+}
+
+@media (max-width: 768px) {
+  .projects-list {
+    padding: 0 5%;
+  }
 }
