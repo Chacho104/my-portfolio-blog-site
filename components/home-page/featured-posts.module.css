@@ -1,12 +1,10 @@
-.posts {
-  width: 100%;
+.posts-list {
   height: auto;
-  min-height: 100vh;
   padding: 0 10%;
 }
 
-@media (max-width: 600px) {
-  .posts {
+@media (max-width: 768px) {
+  .posts-list {
     padding: 0 5%;
   }
 }
