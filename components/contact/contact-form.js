@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import classes from "./contact-form.module.css";
+import { MdWavingHand } from "react-icons/md";
 
 import Notification from "../ui/notification";
 
@@ -85,29 +86,40 @@ function ContactForm() {
   }
 
   return (
-    <section className={classes.contact}>
+    <section>
+      <div className="topsvg">
+        <MdWavingHand />
+      </div>
       <div className={classes["form-section"]}>
-        <h1>How can I help you?</h1>
+        <div className={classes.hello}>
+          <h1>Say hello!</h1>
+        </div>
+        <p>
+          Great conversations that turn ideas into solutions often start with a
+          simple hello...
+        </p>
         <form className={classes.form} onSubmit={sendMessageHandler}>
           <div className={classes.controls}>
-            <div className={classes.control}>
-              <label htmlFor="email">Your email</label>
-              <input
-                type="email"
-                id="email"
-                required
-                value={enteredEmail}
-                onChange={(event) => setEnteredEmail(event.target.value)}
-              />
-            </div>
             <div className={classes.control}>
               <label htmlFor="name">Your name</label>
               <input
                 type="text"
                 id="name"
+                placeholder="Enter your name"
                 required
                 value={enteredName}
                 onChange={(event) => setEnteredName(event.target.value)}
+              />
+            </div>
+            <div className={classes.control}>
+              <label htmlFor="email">Your email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+                value={enteredEmail}
+                onChange={(event) => setEnteredEmail(event.target.value)}
               />
             </div>
           </div>
@@ -116,8 +128,9 @@ function ContactForm() {
             <textarea
               name="message"
               id="message"
-              rows="5"
+              rows="2"
               required
+              placeholder="Hello, great to meet you! Can you help me build a website for my online shoe store? Let me know, thanks"
               value={enteredMessage}
               onChange={(event) => setEnteredMessage(event.target.value)}
             ></textarea>
@@ -134,6 +147,9 @@ function ContactForm() {
           message={notification.message}
         />
       )}
+      <div className="botsvg">
+        <MdWavingHand />
+      </div>
     </section>
   );
 }
