@@ -1,5 +1,5 @@
 import classes from "./all-posts.module.css";
-import PostsGrid from "./posts-grid";
+import PostsList from "./posts-list";
 import { TbWriting } from "react-icons/tb";
 
 function AllPosts(props) {
@@ -9,8 +9,8 @@ function AllPosts(props) {
         <TbWriting />
       </div>
       <div className={classes["posts-list"]}>
-        <h2 className="special-h2">All Blogs</h2>
-        <PostsGrid posts={props.posts} />
+        <h2 className="special-h2">All blogs</h2>
+        <PostsList posts={props.posts} />
       </div>
       <div className="botsvg">
         <TbWriting />
