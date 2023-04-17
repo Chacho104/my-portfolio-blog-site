@@ -1,0 +1,76 @@
+.project {
+  background-color: transparent;
+  color: var(--color-grey-1000);
+  width: 100%;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+
+.image {
+  width: 50%;
+  max-height: 14.375rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.image img:hover {
+  opacity: 0.6;
+}
+
+.text {
+  width: 50%;
+  border: 1px solid var(--color-primary-400);
+}
+
+@media screen and (max-width: 768px) {
+  .image {
+    display: none;
+  }
+
+  .text {
+    width: 100%;
+  }
+}
+
+.content {
+  padding: var(--size-4);
+}
+
+.content h3 {
+  margin: var(--size-2) 0;
+  font-size: var(--size-6);
+}
+
+.content span {
+  font-style: italic;
+  color: var(--color-primary-400);
+}
+
+.content p {
+  line-height: var(--size-6);
+  padding: var(--size-4) 0 var(--size-6);
+}
+
+.links {
+  margin-bottom: var(--size-4);
+}
+
+.links a {
+  font-size: var(--size-6);
+  color: var(--color-grey-900);
+  padding: 0 var(--size-2);
+}
+
+.links a:hover {
+  color: var(--color-grey-600);
+}
