@@ -8,14 +8,6 @@
   justify-content: space-between;
 }
 
-.line-break {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: var(--size-20);
-  color: var(--color-primary-400);
-}
-
 .text {
   width: 70%;
 }
@@ -55,13 +47,14 @@
 
 .description .item .text-svg svg {
   font-size: var(--size-40);
-  color: var(--color-grey-700);
+  color: var(--color-grey-900);
 }
 
 .actions {
   display: flex;
   justify-content: center;
-  gap: var(--size-6);
+  gap: var(--size-8);
+  padding: 0 0 var(--size-8);
 }
 
 .hello {
