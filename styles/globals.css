@@ -7,7 +7,7 @@
 }
 
 body {
-  --color-grey-50: hsl(265, 55%, 96%);
+  --color-grey-50: hsl(267, 52%, 96%);
   --color-grey-100: hsl(265, 19%, 88%);
   --color-grey-200: hsl(265, 7%, 70%);
   --color-grey-300: hsl(265, 6%, 66%);
@@ -47,7 +47,7 @@ body {
   --size-40: 10rem;
 
   background-color: var(--color-grey-100);
-  color: #000;
+  color: var(--color-grey-800);
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
@@ -69,7 +69,6 @@ section h2 {
 
 section {
   height: auto;
-  margin-bottom: var(--size-12);
 }
 
 section .topsvg {
@@ -82,7 +81,7 @@ section .topsvg svg,
 section .botsvg svg {
   color: var(--color-primary-400);
   font-size: var(--size-8);
-  margin: var(--size-8) 0;
+  margin: var(--size-8) 0 0;
 }
 
 section .botsvg {
@@ -90,6 +89,14 @@ section .botsvg {
   width: 10%;
   display: flex;
   justify-content: center;
+}
+
+.line-break {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--size-20);
+  color: var(--color-primary-400);
 }
 
 @media (max-width: 768px) {
