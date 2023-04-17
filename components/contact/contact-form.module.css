@@ -78,7 +78,7 @@
 }
 
 .actions {
-  margin-top: var(--size-4);
+  margin-top: var(--size-8);
   text-align: right;
 }
 
@@ -100,6 +100,9 @@
 }
 
 @media (max-width: 768px) {
+  .form-section {
+    padding: 0 5% var(--size-8);
+  }
   .contact h1 {
     font-size: var(--size-8);
     text-align: left;
