@@ -1,4 +1,4 @@
-import PostsGrid from "../posts/posts-grid";
+import PostsList from "../posts/posts-list";
 import classes from "./featured-posts.module.css";
 import { TbWriting } from "react-icons/tb";
 
@@ -10,7 +10,7 @@ function FeaturedPosts(props) {
       </div>
       <div className={classes["posts-list"]}>
         <h2>Latest blogs</h2>
-        <PostsGrid posts={props.posts} />
+        <PostsList posts={props.posts} />
       </div>
       <div className="botsvg">
         <TbWriting />
