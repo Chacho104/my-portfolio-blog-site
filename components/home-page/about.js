@@ -39,7 +39,7 @@ function About() {
             <MdDevicesOther />
           </div>
         </div>
-        <div className={classes["line-break"]}>
+        <div className="line-break">
           <AiOutlineLine />
         </div>
         <div className={classes.item}>
@@ -60,7 +60,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div className={classes["line-break"]}>
+        <div className="line-break">
           <AiOutlineLine />
         </div>
         <div className={classes.actions}>
