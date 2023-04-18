@@ -4,7 +4,7 @@ import { TbWriting } from "react-icons/tb";
 
 function FeaturedPosts(props) {
   return (
-    <section>
+    <section className={classes.posts}>
       <div className="topsvg">
         <TbWriting />
       </div>
