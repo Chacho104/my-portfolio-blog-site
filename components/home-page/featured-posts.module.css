@@ -1,9 +1,17 @@
+.posts {
+  margin-bottom: 6rem;
+}
+
 .posts-list {
   height: auto;
   padding: 0 10%;
 }
 
 @media (max-width: 768px) {
+  .posts {
+    margin-bottom: 2rem;
+  }
+
   .posts-list {
     padding: 0 5%;
   }
