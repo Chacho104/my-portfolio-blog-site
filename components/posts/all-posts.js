@@ -4,7 +4,7 @@ import { TbWriting } from "react-icons/tb";
 
 function AllPosts(props) {
   return (
-    <section>
+    <section className={classes["all-posts"]}>
       <div className="topsvg">
         <TbWriting />
       </div>
