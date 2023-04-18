@@ -8,27 +8,48 @@
   justify-content: space-between;
 }
 
-.text {
+.text,
+.text1 {
   width: 70%;
+  opacity: 0;
 }
 
-.text h3 {
+.text {
+  transform: translateX(-200px);
+}
+
+.text1 {
+  transform: translateX(200px);
+}
+
+.text.inview,
+.text1.inview {
+  opacity: 1;
+  transform: none;
+  transition: all 0.9s linear 0.5s;
+}
+
+.text h3,
+.text1 h3 {
   font-size: var(--size-8);
   color: var(--color-primary-400);
   padding-bottom: var(--size-3);
 }
 
-.text p {
+.text p,
+.text1 p {
   font-size: var(--size-5);
   line-height: 1.5;
   padding-top: var(--size-2);
 }
 
-.text p a {
+.text p a,
+.text1 p a {
   color: var(--color-primary-500);
 }
 
-.text p a:hover {
+.text p a:hover,
+.text1 p a:hover {
   color: var(--color-primary-700);
   text-decoration: underline;
   text-underline-offset: var(--size-1);
@@ -38,14 +59,33 @@
   color: var(--color-primary-500);
 }
 
-.description .item .text-svg {
+.description .item .text-svg,
+.description .item .text-svg1 {
   width: 50%;
+  opacity: 0;
+
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.description .item .text-svg svg {
+.description .item .text-svg {
+  transform: translateX(200px);
+}
+
+.description .item .text-svg1 {
+  transform: translateX(-200px);
+}
+
+.description .item .text-svg.inview,
+.description .item .text-svg1.inview {
+  opacity: 1;
+  transform: none;
+  transition: all 0.9s linear 0.5s;
+}
+
+.description .item .text-svg svg,
+.description .item .text-svg1 svg {
   font-size: var(--size-40);
   color: var(--color-grey-900);
 }
@@ -67,6 +107,8 @@
   border-radius: 4px;
   color: var(--color-grey-50);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateX(-200px);
 }
 
 .hello:hover {
@@ -85,6 +127,8 @@
   border-radius: 4px;
   color: var(--color-primary-400);
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transform: translateX(200px);
 }
 
 .resume:hover {
@@ -93,27 +137,46 @@
   color: var(--color-grey-50);
 }
 
+.hello.inview,
+.resume.inview {
+  opacity: 1;
+  transform: none;
+  transition: all 0.9s linear 0.5s;
+}
+
 @media screen and (max-width: 768px) {
   .about {
     margin: var(--size-8) 0;
   }
+
   .description {
     padding: 0 5%;
   }
 
-  .text {
+  .text,
+  .text1 {
     width: 100%;
+    transform: none;
+    opacity: 1;
   }
 
-  .text h3 {
+  .text h3,
+  .text1 h3 {
     text-align: center;
   }
 
-  .description .item .text-svg {
+  .description .item .text-svg,
+  .description .item .text-svg1 {
     display: none;
   }
 
   .actions {
     flex-wrap: wrap;
+  }
+
+  .hello,
+  .resume {
+    transform: none;
+    opacity: 1;
   }
 }
