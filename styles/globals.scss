@@ -1,0 +1,11 @@
+.text-animate {
+  opacity: 0;
+  animation: bounceIn 1s 1s;
+  animation-fill-mode: forwards;
+}
+
+@for $i from 1 through 116 {
+  .text-animate._#{$i} {
+    animation-delay: #{$i / 25}s;
+  }
+}
