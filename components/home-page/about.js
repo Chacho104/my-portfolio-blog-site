@@ -4,16 +4,20 @@ import { AiOutlineLine } from "react-icons/ai";
 import classes from "./about.module.css";
 import Link from "next/link";
 import { TbWriting } from "react-icons/tb";
+import { useRef } from "react";
+import { useInView } from "framer-motion";
 
 function About() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, amount: 0.5 });
   return (
-    <section>
+    <section ref={ref}>
       <div className="topsvg">
         <SlAnchor />
       </div>
       <div className={classes.description}>
         <div className={classes.item}>
-          <div className={classes.text}>
+          <div className={`${classes.text} ${isInView ? classes.inview : ""}`}>
             <h3>The developer</h3>
             <p>
               Hello, my name is Churchil Owino, and I am a{" "}
@@ -35,18 +39,26 @@ function About() {
               Check out all my <Link href="/projects">projects</Link>
             </p>
           </div>
-          <div className={classes["text-svg"]}>
+          <div
+            className={`${classes["text-svg"]} ${
+              isInView ? classes.inview : ""
+            }`}
+          >
             <MdDevicesOther />
           </div>
         </div>
-        <div className="line-break">
+        <div className={`line-break ${isInView ? "inview" : ""}`}>
           <AiOutlineLine />
         </div>
         <div className={classes.item}>
-          <div className={classes["text-svg"]}>
+          <div
+            className={`${classes["text-svg1"]} ${
+              isInView ? classes.inview : ""
+            }`}
+          >
             <TbWriting />
           </div>
-          <div className={classes.text}>
+          <div className={`${classes.text1} ${isInView ? classes.inview : ""}`}>
             <h3>The blogger</h3>
             <p>
               Writing is how I give back to the society in my small way. As a
@@ -56,18 +68,25 @@ function About() {
             </p>
             <p>I mostly blog about JavaScript, React.js, and Next.js.</p>
             <p>
-              Check out all my <Link href="/blogs">blogs</Link>
+              Check out all my <Link href="/posts">blogs</Link>
             </p>
           </div>
         </div>
-        <div className="line-break">
+        <div className={`line-break1 ${isInView ? "inview" : ""}`}>
           <AiOutlineLine />
         </div>
         <div className={classes.actions}>
-          <Link href="/contact" className={classes.hello}>
+          <Link
+            href="/contact"
+            className={`${classes.hello} ${isInView ? classes.inview : ""}`}
+          >
             Say hello
           </Link>
-          <button className={classes.resume}>My resume</button>
+          <button
+            className={`${classes.resume} ${isInView ? classes.inview : ""}`}
+          >
+            My resume
+          </button>
         </div>
       </div>
       <div className="botsvg">
