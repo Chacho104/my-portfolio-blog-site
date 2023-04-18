@@ -1,4 +1,4 @@
-const { Fragment } = require("react");
+import { Fragment } from "react";
 import MainNav from "./main-nav";
 import Footer from "./footer";
 
