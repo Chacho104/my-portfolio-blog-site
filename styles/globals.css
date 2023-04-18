@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap");
 
+@import "animate.css";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -46,7 +48,7 @@ body {
   --size-20: 5rem;
   --size-40: 10rem;
 
-  background-color: var(--color-grey-100);
+  background-color: var(--color-grey-50);
   color: var(--color-grey-800);
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
@@ -91,12 +93,29 @@ section .botsvg {
   justify-content: center;
 }
 
-.line-break {
+.line-break,
+.line-break1 {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: var(--size-20);
   color: var(--color-primary-400);
+  opacity: 0;
+}
+
+.line-break {
+  transform: translateX(-400px);
+}
+
+.line-break1 {
+  transform: translateX(400px);
+}
+
+.line-break.inview,
+.line-break1.inview {
+  opacity: 1;
+  transform: none;
+  transition: all 0.5s linear 0.25s;
 }
 
 @media (max-width: 768px) {
@@ -111,6 +130,12 @@ section .botsvg {
   section .topsvg,
   section .botsvg {
     display: none;
+  }
+
+  .line-break,
+  .line-break1 {
+    transform: none;
+    opacity: 1;
   }
 }
 
