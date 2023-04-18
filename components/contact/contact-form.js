@@ -86,7 +86,7 @@ function ContactForm() {
   }
 
   return (
-    <section>
+    <section className={classes.contact}>
       <div className="topsvg">
         <MdWavingHand />
       </div>
@@ -96,7 +96,7 @@ function ContactForm() {
         </div>
         <p>
           Great conversations that turn ideas into solutions often start with a
-          simple hello...
+          simple hello...go right ahead!
         </p>
         <form className={classes.form} onSubmit={sendMessageHandler}>
           <div className={classes.controls}>
