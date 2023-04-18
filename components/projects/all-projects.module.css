@@ -1,9 +1,17 @@
+.projects {
+  margin-bottom: 6rem;
+}
+
 .projects-list {
   height: auto;
   padding: 0 10%;
 }
 
 @media (max-width: 768px) {
+  .projects {
+    margin-bottom: 0;
+  }
+
   .projects-list {
     padding: 0 5%;
   }
