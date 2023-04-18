@@ -5,7 +5,7 @@ import ProjectsList from "./projects-list";
 
 function AllProjects(props) {
   return (
-    <section>
+    <section className={classes.projects}>
       <div className="topsvg">
         <BsCodeSlash />
       </div>
