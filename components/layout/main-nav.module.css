@@ -6,6 +6,16 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 10%;
+  position: sticky;
+  top: 0;
+  transition-property: all;
+  transition-timing-function: linear;
+  transition-duration: 800ms;
+  z-index: 999;
+}
+
+.header.down {
+  top: -6rem;
 }
 
 .header ul {
@@ -19,7 +29,7 @@
 }
 
 .header a {
-  color: var(--color-grey-50);
+  color: var(--color-grey-200);
   font-size: var(--size-6);
   font-family: "Oswald", sans-serif;
 }
@@ -27,7 +37,7 @@
 .header a:hover,
 .header a:active,
 .header a.active {
-  color: var(--color-grey-200);
+  color: var(--color-grey-50);
 }
 
 @media (max-width: 768px) {
