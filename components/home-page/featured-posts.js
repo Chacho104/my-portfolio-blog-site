@@ -9,7 +9,7 @@ function FeaturedPosts(props) {
         <TbWriting />
       </div>
       <div className={classes["posts-list"]}>
-        <h2>Latest blogs</h2>
+        <h2>Latest posts</h2>
         <PostsList posts={props.posts} />
       </div>
       <div className="botsvg">
