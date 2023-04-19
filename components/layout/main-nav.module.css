@@ -10,7 +10,7 @@
   top: 0;
   transition-property: all;
   transition-timing-function: linear;
-  transition-duration: 800ms;
+  transition-duration: 500ms;
   z-index: 999;
 }
 
