@@ -104,18 +104,18 @@ section .botsvg {
 }
 
 .line-break {
-  transform: translateX(-400px);
+  transform: translateX(-200px);
 }
 
 .line-break1 {
-  transform: translateX(400px);
+  transform: translateX(200px);
 }
 
 .line-break.inview,
 .line-break1.inview {
   opacity: 1;
   transform: none;
-  transition: all 0.5s linear 0.25s;
+  transition: all 0.9s linear 1.8s;
 }
 
 @media (max-width: 768px) {
