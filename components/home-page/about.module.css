@@ -26,7 +26,7 @@
 .text1.inview {
   opacity: 1;
   transform: none;
-  transition: all 0.9s linear 0.5s;
+  transition: all 0.9s ease-out 0s;
 }
 
 .text h3,
@@ -81,7 +81,7 @@
 .description .item .text-svg1.inview {
   opacity: 1;
   transform: none;
-  transition: all 0.9s linear 0.5s;
+  transition: all 0.9s ease-out 0.9s;
 }
 
 .description .item .text-svg svg,
@@ -141,7 +141,7 @@
 .resume.inview {
   opacity: 1;
   transform: none;
-  transition: all 0.9s linear 0.5s;
+  transition: all 0.9s ease-out 2.75s;
 }
 
 @media screen and (max-width: 768px) {
