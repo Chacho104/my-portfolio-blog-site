@@ -16,6 +16,16 @@
 
 .content p {
   color: var(--color-grey-800);
+  padding: var(--size-1) 0;
+}
+
+.content a {
+  color: var(--color-primary-400);
+}
+
+.content a:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.25rem;
 }
 
 .content ul {
