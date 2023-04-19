@@ -9,7 +9,7 @@ function AllPosts(props) {
         <TbWriting />
       </div>
       <div className={classes["posts-list"]}>
-        <h2 className="special-h2">All blogs</h2>
+        <h2 className="special-h2">All posts</h2>
         <PostsList posts={props.posts} />
       </div>
       <div className="botsvg">
