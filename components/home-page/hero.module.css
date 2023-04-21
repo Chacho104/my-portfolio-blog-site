@@ -48,6 +48,7 @@
 @media screen and (max-width: 768px) {
   .hero {
     margin-bottom: var(--size-8);
+    gap: 0;
   }
 
   .image {
