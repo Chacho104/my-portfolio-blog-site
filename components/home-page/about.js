@@ -6,6 +6,7 @@ import Link from "next/link";
 import { TbWriting } from "react-icons/tb";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
+import Button from "../ui/button";
 
 function About() {
   const ref = useRef(null);
@@ -76,17 +77,18 @@ function About() {
           <AiOutlineLine />
         </div>
         <div className={classes.actions}>
-          <Link
-            href="/contact"
-            className={`${classes.hello} ${isInView ? classes.inview : ""}`}
-          >
-            Say hello
-          </Link>
-          <button
+          <div className={`${classes.hello} ${isInView ? classes.inview : ""}`}>
+            <Button link="/contact" variant="btn">
+              Say hello
+            </Button>
+          </div>
+          <div
             className={`${classes.resume} ${isInView ? classes.inview : ""}`}
           >
-            My resume
-          </button>
+            <Button link="/" variant="btn1">
+              My resume
+            </Button>
+          </div>
         </div>
       </div>
       <div className="botsvg">
