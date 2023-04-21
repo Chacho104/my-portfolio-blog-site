@@ -3,6 +3,7 @@ import classes from "./contact-form.module.css";
 import { MdWavingHand } from "react-icons/md";
 
 import Notification from "../ui/notification";
+import Button from "../ui/button";
 
 async function sendContactData(contactDetails) {
   const response = await fetch("/api/contact", {
@@ -136,7 +137,7 @@ function ContactForm() {
             ></textarea>
           </div>
           <div className={classes.actions}>
-            <button>Send message</button>
+            <Button variant="btn">Send message</Button>
           </div>
         </form>
       </div>
