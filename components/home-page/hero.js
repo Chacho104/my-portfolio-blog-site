@@ -1,9 +1,14 @@
 import Image from "next/image";
 import classes from "./hero.module.css";
 import AnimatedLetters from "../ui/animated-letters";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import Button from "../ui/button";
+import { useInView } from "framer-motion";
 
 function Hero() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
+
   const [letterClass, setLetterClass] = useState("text-animate");
 
   const nameArray = [
@@ -115,7 +120,7 @@ function Hero() {
   ];
 
   return (
-    <section className={classes.hero}>
+    <section className={classes.hero} ref={ref}>
       <div className={classes.image}>
         <Image
           src="/images/site/profile-img.jpg"
@@ -139,6 +144,11 @@ function Hero() {
             idx={31}
           />
         </p>
+      </div>
+      <div className={`${classes.resume} ${isInView ? classes.inview : ""}`}>
+        <Button link="/" variant="btn">
+          Download resume
+        </Button>
       </div>
     </section>
   );
