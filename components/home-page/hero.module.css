@@ -10,6 +10,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
   margin-bottom: 0;
 }
 
@@ -50,6 +51,15 @@
   }
 
   .image {
-    display: none;
+    width: 250px;
+    height: 250px;
+  }
+
+  .hero h1 {
+    font-size: var(--size-12);
+  }
+
+  .hero p {
+    font-size: var(--size-5);
   }
 }
