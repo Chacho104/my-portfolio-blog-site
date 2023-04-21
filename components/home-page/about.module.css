@@ -90,31 +90,6 @@
   color: var(--color-grey-900);
 }
 
-.actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: var(--size-8);
-  height: var(--size-12);
-}
-
-.hello {
-  opacity: 0;
-  transform: translateX(-200px);
-}
-
-.resume {
-  opacity: 0;
-  transform: translateX(200px);
-}
-
-.hello.inview,
-.resume.inview {
-  opacity: 1;
-  transform: none;
-  transition: all 1s ease-out 2.75s;
-}
-
 @media screen and (max-width: 768px) {
   .about {
     margin: var(--size-8) 0;
@@ -139,15 +114,5 @@
   .description .item .text-svg,
   .description .item .text-svg1 {
     display: none;
-  }
-
-  .actions {
-    flex-wrap: wrap;
-  }
-
-  .hello,
-  .resume {
-    transform: none;
-    opacity: 1;
   }
 }
