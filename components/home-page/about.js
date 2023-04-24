@@ -27,8 +27,8 @@ function About() {
               based in Nairobi, Kenya.
             </p>
             <p>
-              As a developer, I specialize in turning ideas and designs into
-              picture perfect, fully responsive UI implementations using{" "}
+              I specialize in turning ideas and designs into picture perfect,
+              fully responsive UI implementations using{" "}
               <strong className={classes.highlight}>
                 JavaScript, React.js, Next.js, CSS3, and HTML5.
               </strong>{" "}
@@ -61,12 +61,18 @@ function About() {
           <div className={`${classes.text1} ${isInView ? classes.inview : ""}`}>
             <h3>The blogger</h3>
             <p>
-              Writing is how I give back to the society in my small way. As a
-              self-taught developer, I appreciate the value of well-crafted
-              articles out there that help others learn something new or solve a
-              problem.
+              Often, my articles are a documentation of the problems I encounter
+              in my line of work and their solutions. I have gained a lot from
+              such documentations elsewhere on the web, and I believe it's only
+              fair that others get to benefit as well from my development
+              adventures.
             </p>
-            <p>I mostly blog about JavaScript, React.js, and Next.js.</p>
+            <p>
+              I mostly blog about{" "}
+              <strong className={classes.highlight}>
+                JavaScript, React.js, and Next.js.
+              </strong>
+            </p>
             <p>
               Check out all my <Link href="/posts">blogs</Link>
             </p>
