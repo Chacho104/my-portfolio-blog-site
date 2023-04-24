@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import classes from "./notification.module.css";
 
 function Notification(props) {
-  const { title, message, status } = props;
+  const { message, status } = props;
 
   let statusClasses = "";
 
@@ -19,7 +19,6 @@ function Notification(props) {
 
   return ReactDOM.createPortal(
     <div className={cssClasses}>
-      <h2>{title}</h2>
       <p>{message}</p>
     </div>,
     document.getElementById("notifications")
