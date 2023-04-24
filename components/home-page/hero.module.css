@@ -64,7 +64,7 @@
   .hero {
     margin-bottom: var(--size-8);
     height: calc(100vh - 4rem);
-    gap: 0.5rem;
+    gap: 0;
   }
 
   .image {
