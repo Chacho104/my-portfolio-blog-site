@@ -63,7 +63,7 @@ function About() {
             <p>
               Often, my articles are a documentation of the problems I encounter
               in my line of work and their solutions. I have gained a lot from
-              such documentations elsewhere on the web, and I believe it's only
+              such documentations elsewhere on the web, and I believe it is only
               fair that others get to benefit as well from my development
               adventures.
             </p>
