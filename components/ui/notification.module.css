@@ -1,6 +1,6 @@
 .notification {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   color: var(--color-grey-100);
   background-color: var(--color-grey-800);
@@ -9,11 +9,6 @@
   height: 6rem;
   bottom: 0;
   width: 100%;
-}
-
-.notification h2 {
-  font-size: var(--size-6);
-  margin: 0;
 }
 
 .notification p {
