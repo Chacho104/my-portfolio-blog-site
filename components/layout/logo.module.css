@@ -1,6 +1,12 @@
 .logo {
   font-size: var(--size-8);
   font-family: "Oswald", sans-serif;
+  color: var(--color-grey-200);
+}
+
+.logo:hover,
+.logo:active,
+.logo.active {
   color: var(--color-grey-50);
 }
 
