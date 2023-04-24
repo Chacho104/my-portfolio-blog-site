@@ -65,15 +65,13 @@ function ContactForm() {
   if (requestStatus === "pending") {
     notification = {
       status: "pending",
-      title: "Sending message...",
-      message: "Your message is on its way!",
+      message: "Your message is on its way...",
     };
   }
 
   if (requestStatus === "success") {
     notification = {
       status: "success",
-      title: "Success!",
       message: "Your message was sent successfully!",
     };
   }
@@ -81,7 +79,6 @@ function ContactForm() {
   if (requestStatus === "error") {
     notification = {
       status: "error",
-      title: "Error!",
       message: requestError,
     };
   }
