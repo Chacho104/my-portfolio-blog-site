@@ -43,20 +43,8 @@
   padding-top: var(--size-2);
 }
 
-.text p a,
-.text1 p a {
-  color: var(--color-primary-500);
-}
-
-.text p a:hover,
-.text1 p a:hover {
-  color: var(--color-primary-700);
-  text-decoration: underline;
-  text-underline-offset: var(--size-1);
-}
-
 .highlight {
-  color: var(--color-primary-500);
+  color: var(--color-grey-1000);
 }
 
 .description .item .text-svg,
@@ -87,7 +75,7 @@
 .description .item .text-svg svg,
 .description .item .text-svg1 svg {
   font-size: var(--size-40);
-  color: var(--color-grey-900);
+  color: var(--color-grey-1000);
 }
 
 @media screen and (max-width: 768px) {
