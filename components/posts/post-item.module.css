@@ -1,6 +1,10 @@
 .post {
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-  background-color: var(--color-grey-800);
+  background-image: linear-gradient(
+    to bottom,
+    var(--color-grey-900),
+    var(--color-grey-1000)
+  );
   text-align: center;
   transform: translateY(100px);
   opacity: 0;
