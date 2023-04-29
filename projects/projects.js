@@ -21,7 +21,7 @@ const projects = [
     stack: "React.js | Next.js | SSG | SSR | ISR | CSS3 | CSS Modules",
     github: "https://github.com/Chacho104/eventour-app",
     website: "https://eventour-app.vercel.app/",
-    image: "images/projects/eventour1.png",
+    image: "images/projects/eventour-project.png",
     isFeatured: true,
     layout: "img-first",
   },
