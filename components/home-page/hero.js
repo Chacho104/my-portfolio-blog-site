@@ -138,7 +138,10 @@ function Hero() {
         </p>
       </div>
       <div className={`${classes.resume} ${isInView ? classes.inview : ""}`}>
-        <Button link="/" variant="btn">
+        <Button
+          link="https://docs.google.com/document/d/1zl2NuknAD14afZo6YrNKX6kK9dpu_UvV/edit?usp=sharing&ouid=112780898131641741095&rtpof=true&sd=true"
+          variant="btn"
+        >
           Download resume
         </Button>
       </div>
