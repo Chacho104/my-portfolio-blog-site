@@ -31,7 +31,8 @@ const projects = [
     type: "Personal project",
     description:
       "My portfolio and blog website. Browse my latest projects and blogs, and shoot me a message if you'd like to collaborate on building something amazing for the web.",
-    stack: "React.js | Next.js | SSG | SSR | CSS3 | CSS Modules | Vercel",
+    stack:
+      "React.js | Next.js | SSG | SSR | CSS3 | CSS Modules | Vercel | React Markdown | YAML",
     github: "https://github.com/Chacho104/my-portfolio-blog-site",
     website: "https://www.churchilowino.com/",
     image: "images/projects/chacho-portfolio.png",
