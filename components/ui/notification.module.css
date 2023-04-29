@@ -2,11 +2,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: var(--color-grey-100);
-  background-color: var(--color-grey-800);
+  color: var(--color-grey-50);
+  background-color: var(--color-grey-1000);
   padding: 0 var(--size-8);
   position: fixed;
-  height: 6rem;
+  height: 4rem;
   bottom: 0;
   width: 100%;
 }
