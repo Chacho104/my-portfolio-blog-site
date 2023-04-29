@@ -9,7 +9,7 @@
 }
 
 body {
-  --color-grey-50: hsl(267, 52%, 96%);
+  --color-grey-50: hsl(0, 0%, 100%);
   --color-grey-100: hsl(265, 19%, 88%);
   --color-grey-200: hsl(265, 7%, 70%);
   --color-grey-300: hsl(265, 6%, 66%);
@@ -19,16 +19,16 @@ body {
   --color-grey-700: hsl(265, 4%, 31%);
   --color-grey-800: hsl(276, 5%, 20%);
   --color-grey-900: hsl(280, 5%, 13%);
-  --color-grey-1000: hsl(300, 9%, 2%);
+  --color-grey-1000: hsl(0, 0%, 0%);
 
-  --color-primary-50: #c8b3ce;
-  --color-primary-100: #a07aaa;
-  --color-primary-200: #884c97;
-  --color-primary-300: #843897;
-  --color-primary-400: #732392;
-  --color-primary-500: #5a097a;
-  --color-primary-600: #480264;
-  --color-primary-700: #3d0264;
+  --color-primary-50: #f4b0c1;
+  --color-primary-100: #e24d72;
+  --color-primary-200: #c9224c;
+  --color-primary-300: #b6123b;
+  --color-primary-400: #a41034;
+  --color-primary-500: #840525;
+  --color-primary-600: #5b0218;
+  --color-primary-700: #39010f;
 
   --color-success-100: #a2f0bc;
   --color-success-500: #12bd4b;
@@ -65,6 +65,35 @@ section h2 {
   color: var(--color-primary-400);
   text-align: center;
   padding-bottom: var(--size-8);
+}
+
+/* General styling for a tags */
+
+li a,
+p a {
+  position: relative;
+  color: var(--color-primary-400);
+}
+
+li a::before,
+p a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: var(--color-primary-400);
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 0.4s ease-in-out;
+}
+
+li a:hover::before,
+p a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
 }
 
 /* General styling for the layout of main sections*/
