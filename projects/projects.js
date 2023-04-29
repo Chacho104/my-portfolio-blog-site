@@ -20,7 +20,7 @@ const projects = [
       "Full-stack next.js web app for an imaginary events app, Eventour. Browse and book events near you and have fun with other event lovers. Complete with authentication, so you can sign up, log in, and log out.",
     stack: "React.js | Next.js | SSG | SSR | ISR | CSS3 | CSS Modules",
     github: "https://github.com/Chacho104/eventour-app",
-    website: "https://www.churchilowino.com/",
+    website: "https://eventour-app.vercel.app/",
     image: "images/projects/eventour1.png",
     isFeatured: true,
     layout: "img-first",
