@@ -53,7 +53,7 @@ function MainNav() {
               href="/projects"
               className={router.pathname === "/projects" ? classes.active : ""}
             >
-              Showroom
+              Projects
             </Link>
           </li>
           <li>
