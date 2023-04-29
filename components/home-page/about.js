@@ -36,7 +36,7 @@ function About() {
               just the way you want it!
             </p>
             <p>
-              Check out all my <Link href="/projects">projects</Link>
+              Check <Link href="/projects">all my projects</Link>
             </p>
           </div>
           <div
@@ -61,11 +61,10 @@ function About() {
           <div className={`${classes.text1} ${isInView ? classes.inview : ""}`}>
             <h3>The blogger</h3>
             <p>
-              Often, my articles are a documentation of the problems I encounter
+              My articles are mostly a documentation of the problems I encounter
               in my line of work and their solutions. I have gained a lot from
-              such documentations elsewhere on the web, and I believe it is only
-              fair that others get to benefit as well from my development
-              adventures.
+              similar articles elsewhere on the web, and it is only fair that I
+              return the favor.
             </p>
             <p>
               I mostly blog about{" "}
@@ -74,7 +73,7 @@ function About() {
               </strong>
             </p>
             <p>
-              Check out all my <Link href="/posts">blogs</Link>
+              Check <Link href="/posts">all my blogs</Link>
             </p>
           </div>
         </div>
