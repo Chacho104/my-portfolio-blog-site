@@ -1,6 +1,6 @@
 .footer {
   width: 100%;
-  height: 6rem;
+  height: 4rem;
   background-color: var(--color-grey-900);
   display: flex;
   justify-content: space-between;
@@ -24,14 +24,14 @@
 
 .footer a {
   color: var(--color-grey-50);
-  font-size: var(--size-6);
+  font-size: var(--size-5);
   font-family: "Oswald", sans-serif;
 }
 
 .footer a:hover,
 .footer a:active,
 .footer a.active {
-  color: var(--color-grey-200);
+  color: var(--color-primary-300);
 }
 
 @media (max-width: 768px) {
