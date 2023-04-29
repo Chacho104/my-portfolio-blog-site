@@ -45,7 +45,7 @@
 .text,
 .text1 {
   width: 50%;
-  border: 1px solid var(--color-primary-400);
+  border: 2px solid var(--color-primary-400);
   opacity: 0;
 }
 
