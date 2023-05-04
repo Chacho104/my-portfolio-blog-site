@@ -27,16 +27,18 @@ function About() {
               based in Nairobi, Kenya.
             </p>
             <p>
-              I specialize in turning ideas and designs into picture perfect,
-              fully responsive UI implementations using{" "}
+              I specialize in turning ideas and designs into acccessible, fully
+              responsive, and picture perfect UI implementations mainly through{" "}
               <strong className={classes.highlight}>
-                JavaScript, React.js, Next.js, CSS3, and HTML5.
+                JavaScript, TypeScript, React.js, Next.js, CSS3, and HTML5.
               </strong>{" "}
-              I am huge on details. I will not rest until every tiny detail fits
-              just the way you want it!
+              Other tools and technologies that I love using include:{" "}
+              <strong className={classes.highlight}>
+                Chakra UI, Bootstrap, Sass, Redux, and Recoil.
+              </strong>
             </p>
             <p>
-              Check <Link href="/projects">all my projects</Link>
+              Check out <Link href="/projects">all my projects</Link>
             </p>
           </div>
           <div
@@ -73,7 +75,7 @@ function About() {
               </strong>
             </p>
             <p>
-              Check <Link href="/posts">all my blogs</Link>
+              Check out <Link href="/posts">all my blogs</Link>
             </p>
           </div>
         </div>
