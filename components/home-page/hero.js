@@ -28,11 +28,16 @@ function Hero() {
     "h",
     "i",
     "l",
-    ",",
   ];
 
   const jobArray = [
-    "a",
+    "I",
+    " ",
+    "b",
+    "u",
+    "i",
+    "l",
+    "d",
     " ",
     "f",
     "r",
@@ -44,31 +49,42 @@ function Hero() {
     "n",
     "d",
     " ",
-    "s",
-    "o",
-    "f",
-    "t",
     "w",
+    "e",
+    "b",
+    " ",
     "a",
-    "r",
-    "e",
-    " ",
-    "d",
-    "e",
-    "v",
-    "e",
-    "l",
-    "o",
     "p",
-    "e",
-    "r",
+    "p",
+    "l",
+    "i",
+    "c",
+    "a",
+    "t",
+    "i",
+    "o",
+    "n",
+    "s",
     " ",
-    "|",
+    "i",
+    "n",
     " ",
     "J",
     "a",
     "v",
     "a",
+    "S",
+    "c",
+    "r",
+    "i",
+    "p",
+    "t",
+    ",",
+    " ",
+    "T",
+    "y",
+    "p",
+    "e",
     "S",
     "c",
     "r",
@@ -90,7 +106,7 @@ function Hero() {
     "N",
     "e",
     "x",
-    "j",
+    "t",
     ".",
     "j",
     "s",
@@ -100,6 +116,7 @@ function Hero() {
     "S",
     "S",
     "3",
+    ",",
     " ",
     "&",
     " ",
@@ -138,12 +155,7 @@ function Hero() {
         </p>
       </div>
       <div className={`${classes.resume} ${isInView ? classes.inview : ""}`}>
-        <Button
-          link="https://docs.google.com/document/d/1zl2NuknAD14afZo6YrNKX6kK9dpu_UvV/edit?usp=sharing&ouid=112780898131641741095&rtpof=true&sd=true"
-          variant="btn"
-        >
-          Download resume
-        </Button>
+        <Button variant="btn">Download resume</Button>
       </div>
     </section>
   );
