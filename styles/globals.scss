@@ -4,7 +4,7 @@
   animation-fill-mode: forwards;
 }
 
-@for $i from 1 through 116 {
+@for $i from 1 through 125 {
   .text-animate._#{$i} {
     animation-delay: #{$i / 25}s;
   }
