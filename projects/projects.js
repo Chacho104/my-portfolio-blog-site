@@ -5,9 +5,10 @@ const projects = [
     type: "Personal project",
     description:
       "A fully fledged web app for an imaginary restaurant, Little Lemon. Place your online food orders and reserve a table in advance for your next visit. Beautiful and fully responsive UI.",
-    stack: "React.js | Formik | Context API | CSS3 | CSS Modules | Netlify",
-    github: "https://github.com/Chacho104/little-lemon-app",
-    website: "https://little-lemon-complete.web.app/",
+    stack:
+      "TypeScript | React.js | Next.js | Formik | Redux Toolkit | SASS | CSS Modules | Vercel | MongoDB",
+    github: "https://github.com/Chacho104/little-lemon",
+    website: "https://little-lemon-theta.vercel.app/",
     image: "images/projects/restaurant-app.png",
     isFeatured: true,
     layout: "text-first",
@@ -18,7 +19,8 @@ const projects = [
     type: "Personal project",
     description:
       "Full-stack next.js web app for an imaginary events app, Eventour. Browse and book events near you and have fun with other event lovers. Complete with authentication, so you can sign up, log in, and log out.",
-    stack: "React.js | Next.js | SSG | SSR | ISR | CSS3 | CSS Modules",
+    stack:
+      "React.js | Next.js | SSG | SSR | ISR | CSS3 | CSS Modules | Vercel | MongoDB",
     github: "https://github.com/Chacho104/eventour-app",
     website: "https://eventour-app.vercel.app/",
     image: "images/projects/eventour-project.png",
@@ -32,7 +34,7 @@ const projects = [
     description:
       "My portfolio and blog website. Browse my latest projects and blogs, and shoot me a message if you'd like to collaborate on building something amazing for the web.",
     stack:
-      "React.js | Next.js | SSG | SSR | CSS3 | CSS Modules | Vercel | React Markdown | YAML",
+      "React.js | Next.js | SSG | SSR | CSS3 | CSS Modules | Vercel | React Markdown | YAML | MongoDB",
     github: "https://github.com/Chacho104/my-portfolio-blog-site",
     website: "https://www.churchilowino.com/",
     image: "images/projects/chacho-portfolio.png",
