@@ -34,7 +34,7 @@ function About() {
               </strong>{" "}
               Other tools and technologies that I love using include:{" "}
               <strong className={classes.highlight}>
-                Chakra UI, Bootstrap, Sass, Redux, and Recoil.
+                Chakra UI, Bootstrap, Sass, Redux Toolkit, and Recoil.
               </strong>
             </p>
             <p>
