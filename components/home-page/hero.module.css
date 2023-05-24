@@ -49,16 +49,6 @@
   margin-bottom: var(--size-4);
 }
 
-.resume {
-  opacity: 0;
-}
-
-.resume.inview {
-  opacity: 1;
-  transform: none;
-  transition: all 1.25s ease-in 5.25s;
-}
-
 @media screen and (max-width: 768px) {
   .hero {
     margin-bottom: var(--size-8);
