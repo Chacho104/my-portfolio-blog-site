@@ -154,9 +154,6 @@ function Hero() {
           />
         </p>
       </div>
-      <div className={`${classes.resume} ${isInView ? classes.inview : ""}`}>
-        <Button variant="btn">Download resume</Button>
-      </div>
     </section>
   );
 }
