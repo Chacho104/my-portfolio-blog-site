@@ -22,19 +22,23 @@ function About() {
             <p>
               Hello, my name is Churchil Owino, and I am a{" "}
               <strong className={classes.highlight}>
-                front-end software developer and blogger
+                full-stack software developer and blogger
               </strong>{" "}
               based in Nairobi, Kenya.
             </p>
             <p>
               I specialize in turning ideas and designs into acccessible, fully
-              responsive, and picture perfect UI implementations mainly through{" "}
+              responsive, and picture-perfect UI implementations mainly through{" "}
               <strong className={classes.highlight}>
-                JavaScript, TypeScript, React.js, Next.js, CSS3, and HTML5.
+                JavaScript, TypeScript, React.js, Next.js, CSS3, HTML5, and
+                Node.js.
               </strong>{" "}
+            </p>
+            <p>
               Other tools and technologies that I love using include:{" "}
               <strong className={classes.highlight}>
-                Chakra UI, Bootstrap, Sass, Redux Toolkit, and Recoil.
+                Chakra UI, Material UI, Bootstrap, Sass, Tailwind CSS, Redux
+                Toolkit, and Recoil.
               </strong>
             </p>
             <p>
