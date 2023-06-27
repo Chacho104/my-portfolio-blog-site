@@ -1,5 +1,19 @@
 const projects = [
   {
+    id: "reddit-clone",
+    title: "Reddit Clone",
+    type: "Personal project",
+    description:
+      "A full-stack clone of Reddit with implementations of key Reddit functionalities such as authentication, creating and joining communities; and creating, voting on, and commenting on posts in communities.",
+    stack:
+      "TypeScript | React.js | Next.js | Recoil | Chakra UI | Firebase | Cloud Firestore | Vercel ",
+    github: "https://github.com/Chacho104/reddit-clone",
+    website: "https://reddit-clone-vzno.vercel.app/",
+    image: "images/projects/reddit-clone.png",
+    isFeatured: true,
+    layout: "text-first",
+  },
+  {
     id: "little-lemon",
     title: "Restaurant web app",
     type: "Personal project",
@@ -9,9 +23,9 @@ const projects = [
       "TypeScript | React.js | Next.js | Formik | Redux Toolkit | SASS | CSS Modules | Vercel | MongoDB",
     github: "https://github.com/Chacho104/little-lemon",
     website: "https://little-lemon-theta.vercel.app/",
-    image: "images/projects/restaurant-app.png",
+    image: "images/projects/little-lemon.png",
     isFeatured: true,
-    layout: "text-first",
+    layout: "img-first",
   },
   {
     id: "eventour-app",
@@ -23,9 +37,9 @@ const projects = [
       "React.js | Next.js | SSG | SSR | ISR | CSS3 | CSS Modules | Vercel | MongoDB",
     github: "https://github.com/Chacho104/eventour-app",
     website: "https://eventour-app.vercel.app/",
-    image: "images/projects/eventour-project.png",
+    image: "images/projects/events-webpage.png",
     isFeatured: true,
-    layout: "img-first",
+    layout: "text-first",
   },
   {
     id: "my-site",
@@ -37,9 +51,9 @@ const projects = [
       "React.js | Next.js | SSG | SSR | CSS3 | CSS Modules | Vercel | React Markdown | YAML | MongoDB",
     github: "https://github.com/Chacho104/my-portfolio-blog-site",
     website: "https://www.churchilowino.com/",
-    image: "images/projects/chacho-portfolio.png",
+    image: "images/projects/portfolio-home.png",
     isFeatured: true,
-    layout: "text-first",
+    layout: "img-first",
   },
 ];
 
