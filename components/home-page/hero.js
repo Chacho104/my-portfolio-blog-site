@@ -2,12 +2,10 @@ import Image from "next/image";
 import classes from "./hero.module.css";
 import AnimatedLetters from "../ui/animated-letters";
 import { useRef, useState } from "react";
-import Button from "../ui/button";
 import { useInView } from "framer-motion";
 
 function Hero() {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
 
   const [letterClass, setLetterClass] = useState("text-animate");
 
@@ -40,14 +38,15 @@ function Hero() {
     "d",
     " ",
     "f",
-    "r",
-    "o",
-    "n",
-    "t",
+    "u",
+    "l",
+    "l",
     "-",
-    "e",
-    "n",
-    "d",
+    "s",
+    "t",
+    "a",
+    "c",
+    "k",
     " ",
     "w",
     "e",
@@ -118,13 +117,22 @@ function Hero() {
     "3",
     ",",
     " ",
-    "&",
-    " ",
     "H",
     "T",
     "M",
     "L",
     "5",
+    ",",
+    " ",
+    "&",
+    " ",
+    "N",
+    "o",
+    "d",
+    "e",
+    ".",
+    "j",
+    "s",
     ".",
   ];
 
